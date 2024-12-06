@@ -4,20 +4,39 @@
 }
 
 body {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 100vh;
     margin: 0;
     background-color: white; /* Set the background color if you want */
 }
 
+.sticky {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    position: sticky;
+    top:300px;
+    float: right;
+    
+}
+.long-p {
+    height: 2000px;
+}
+.inline {
+    display: inline;
+}
 .card {
-    display: flex;
+    position: fixed;
+    /* display: block;
     justify-content: space-between;
     align-items: center;
-    flex-direction:row; /* Make sure the items are aligned in a row */
-    width: 600px;
+    flex-direction:row; Make sure the items are aligned in a row */
+    top:180px;
+    left:450px;
+    display: block;
+    width: 900px;
     height: auto;
     background-color: black;
     padding: 20px;
@@ -26,13 +45,18 @@ body {
 }
 
 .left, .right {
+    display: inline-block;
     color: white; /* Set the text color to white to contrast the black background */
-    margin: 0;
+    height:;
+    margin: 10px;
+    padding: 0px;
 }
 
 .canvas {
-    display: flex;
+    display: inline-block;
     border: 2px solid red;
+    padding: 0px;
+    
 }
 
 h1 {
@@ -45,10 +69,6 @@ h1 {
     animation-direction: alternate-reverse;
     animation-timing-function:ease-in-out;
     animation-iteration-count: infinite;
-}
-
-.left, .right {
-    margin: 0;
 }
 
 .circle {
